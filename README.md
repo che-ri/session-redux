@@ -11,6 +11,13 @@
 
 -   tailwindcss
 
+> 학습목표
+
+- 리덕스의 필요성에 대해 이해한다.
+- 단일스토어, 다수리듀서라는 리덕스의 정책을 이해한다.
+- 불변성 유지를 알아본다.
+- ducks pattern에 대해 알아보고, 적용한다.
+
 > 추천자료
 
 -   [ducks-pattern](https://github.com/erikras/ducks-modular-redux)
