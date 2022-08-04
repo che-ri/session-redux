@@ -5,6 +5,7 @@ import { createLogger } from "redux-logger";
 
 import count from "../modules/count";
 import coupon from "../modules/coupon";
+import todos from "../modules/todos";
 
 const middleware = [];
 if (process.env.NODE_ENV !== "production") {
@@ -15,6 +16,7 @@ if (process.env.NODE_ENV !== "production") {
 const store = combineReducers({
     count,
     coupon,
+    todos,
 });
 
 export default createStore(store, applyMiddleware(...middleware));
