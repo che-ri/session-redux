@@ -2,14 +2,20 @@
 
 기술매니저 활동 중, 리덕스 라이브세션 때 활용한 자료입니다.
 
+<br/>
+
 > 전역상태관리
 
 -   redux
 -   react-redux
 
+<br/>
+
 > 스타일링
 
 -   tailwindcss
+
+<br/>
 
 > 학습목표
 
@@ -20,10 +26,14 @@
 -   리덕스 모듈의 디자인 패턴인 ducks pattern에 대해 알아본다.
 -   유저의 입력값을 받아서 redux state에 저장하려면 어떻게 해야될지 고민해본다.
 
+<br/>
+
 > 추가세션
 
 1. redux-logger와 함께하는 redux의 흐름
 2. redux으로 to-do-list 만들어보기 ( TODOS.md를 확인해주세요 )
+
+<br/>
 
 > 추천자료
 
