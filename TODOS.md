@@ -19,22 +19,25 @@
 > state 정의하기
 
 이 기능을 수행하기 위해 필요한 값이 무엇인지 정의합니다.
+이 때, list의 각 item에 id가 필요한 이유가 무엇일까요? 생각해봅시다.
 
 ```
-const initialState = [
-    {
-        id: 1,
-        title: "리액트 강의보기",
-        body: "챕터 1부터 챕터 12까지 학습",
-        isDone: false
-    },
-    {
-        id: 2,
-        title: "점심 먹기",
-        body: "점심 뭐먹지..?",
-        isDone: false
-    }
-]
+const initialState = {
+    list : [
+        {
+            id: 1,
+            title: "리액트 강의보기",
+            body: "챕터 1부터 챕터 12까지 학습",
+            isDone: false
+        },
+        {
+            id: 2,
+            title: "점심 먹기",
+            body: "점심 뭐먹지..?",
+            isDone: false
+        }
+    ]
+}
 ```
 
 <br/>
@@ -64,7 +67,7 @@ const initialState = [
 
 > todo 삭제하기 : DELETE
 
-1. 삭제하려고 하는 id값을 받아온다. ( id는 list에서 map돌릴 때 받아올 수 있음 )
+1. 삭제하려고 하는 id값을 받아온다. ( id는 list에서 map돌려서 뷰를 뿌려줄 때, 받아올 수 있음 )
 2. 사용자가 선택한 id값을 가진 데이터를 list에서 찾아서 삭제한다.
 3. 삭제되어진 list를 state에 반영한다. ( 액션생성함수 만들고, 디스패치로 액션생성함수를 실행하게 하여, 리듀서를 통해 state 변경 )
 
@@ -72,6 +75,6 @@ const initialState = [
 
 > todo 완료/취소하기 : UPDATE
 
-1. 수정하려고 하는 id값을 받아온다. ( id는 list에서 map돌릴 때 받아올 수 있음 )
+1. 수정하려고 하는 id값을 받아온다. ( id는 list에서 map돌려서 뷰를 뿌려줄 때, 받아올 수 있음 )
 2. id값을 이용해서 list에서 해당 데이터를 찾고, 그 데이터 내에 isDone을 변경시켜준다.
 3. 수정되어진 list를 state에 반영한다. ( 액션생성함수 만들고, 디스패치로 액션생성함수를 실행하게 하여, 리듀서를 통해 state 변경 )
